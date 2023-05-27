@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5418465929383132147}
   - component: {fileID: 661985778410998951}
   - component: {fileID: 3513668313630642456}
+  - component: {fileID: -5517784651627930236}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: b9287f24d79f39c4aba46141fd79d774,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100f7d0eb7a5e674f833281e856cfa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementForce: 1
+  movementForce: 5
   jumpForce: 5
   maxSpeed: 5
   playerCamera: {fileID: 3523769488403229861}
@@ -183,6 +184,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &-5517784651627930236
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523769489909971853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45
+  m_Height: 1.65
+  m_Direction: 0
+  m_Center: {x: -0.02, y: 0.54, z: -0.04}
 --- !u!1001 &3523769488920061818
 PrefabInstance:
   m_ObjectHideFlags: 0
