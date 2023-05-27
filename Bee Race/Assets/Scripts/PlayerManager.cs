@@ -5,10 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
-
-    private List<PlayerInput> players = new List<PlayerInput> ();
+    public GameObject startCam;
+   [SerializeField] private List<PlayerInput> players = new List<PlayerInput> ();
     [SerializeField] private List<Transform> startingPoints;
-    [SerializeField] private List<LayerMask> playerLayers;
+    //[SerializeField] private List<LayerMask> playerLayers;
 
     private PlayerInputManager playerInputManager;
 
@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     private void OnEnable()
     {
         playerInputManager.onPlayerJoined += AddPlayer;
+        startCam.SetActive (false);
     }
 
     private void OnDisable()
