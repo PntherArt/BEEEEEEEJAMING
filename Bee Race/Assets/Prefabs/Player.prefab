@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 661985778410998951}
   - component: {fileID: 3513668313630642456}
   - component: {fileID: -5517784651627930236}
+  - component: {fileID: 3675398862201516214}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -283,7 +284,27 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3d4605d3-6985-454c-83ef-d4f0ed4d6df3
+    m_ActionName: Player/Select[/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 04e23a50-9748-48a9-81d4-a941a44fff1b
+    m_ActionName: Player/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/XInputControllerWindows/leftStick/down,/XInputControllerWindows1/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows1/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows1/leftStick/right,/XInputControllerWindows/leftStick/up,/XInputControllerWindows1/leftStick/up]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 202ec510-1423-4731-a002-a1cf5d8b5a7c
+    m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/XInputControllerWindows1/rightStick,/XInputControllerWindows/rightStick/down,/XInputControllerWindows1/rightStick/down,/XInputControllerWindows/rightStick/left,/XInputControllerWindows1/rightStick/left,/XInputControllerWindows/rightStick/right,/XInputControllerWindows1/rightStick/right,/XInputControllerWindows/rightStick/up,/XInputControllerWindows1/rightStick/up]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: af826657-fde5-4e7b-ada1-415f67253b76
+    m_ActionName: Player/Pollen[/XInputControllerWindows/buttonSouth,/XInputControllerWindows1/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e4cfc22d-af8a-43fe-b778-3804c8c623da
+    m_ActionName: Player/Boost[/XInputControllerWindows/rightTrigger,/XInputControllerWindows1/rightTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Controllers
   m_DefaultActionMap: Player
@@ -370,6 +391,21 @@ CapsuleCollider:
   m_Height: 1.65
   m_Direction: 0
   m_Center: {x: -0.02, y: 0.54, z: -0.04}
+--- !u!114 &3675398862201516214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523769489909971853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4e8f2a1d0cf8a4cab63ab2a5832a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSetupMenuPrefab: {fileID: 719268571558184831, guid: 41419939ba84831478d1e66c319d06d8,
+    type: 3}
+  input: {fileID: 5418465929383132147}
 --- !u!1 &4574042786266781050
 GameObject:
   m_ObjectHideFlags: 0

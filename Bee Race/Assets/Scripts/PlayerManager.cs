@@ -68,7 +68,7 @@ public class PlayerManager : MonoBehaviour
 
     public void SetPlayerColour(int index, Material colour)
     {
-        colour = PlayerConfigs[index].PlayerMat;
+        PlayerConfigs[index].PlayerMat = colour;
     }
 
     public void ReadyPlayer(int index)
