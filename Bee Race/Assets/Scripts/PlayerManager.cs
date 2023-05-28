@@ -12,22 +12,18 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] private int MaxPlayers = 2;
 
-    public GameObject startCam;
+
     [SerializeField] private List<PlayerInput> players = new List<PlayerInput> ();
-    [SerializeField] private List<Transform> startingPoints;
+
 
     public AudioSource snd;
     public AudioClip[] themes;
 
     public static PlayerManager Instance { get; private set; }
-
-    //public TextMeshProUGUI playerTag;
-
-    private PlayerInputManager PlayerInputManager;
+    public GameObject levelPrefab;
 
     private void Awake()
     {
-        //playerInputManager = FindObjectOfType<PlayerInputManager> ();
 
 
         if(Instance != null)
@@ -38,32 +34,21 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(Instance);
+            DontDestroyOnLoad(levelPrefab);
             PlayerConfigs = new List<PlayerConfiguration> ();
         }
     }
 
-    /*private void OnEnable()
-    {
-        playerInputManager.onPlayerJoined += AddPlayer;
-        startCam.SetActive (false);
-    }
-
-    private void OnDisable()
-    {
-        playerInputManager.onPlayerJoined -= AddPlayer;
-    }
-
-    public void AddPlayer(PlayerInput player)
-    {
-        players.Add(player);
-        player.transform.position = startingPoints[players.Count - 1].position;
-        //playerTag.text = player.name;
-    }*/
 
     public void RandomTheme()
     {
         snd.clip = themes[Random.Range(0, themes.Length)];
         snd.Play();
+    }
+
+    public List<PlayerConfiguration> GetPlayerConfigs()
+    {
+        return PlayerConfigs;
     }
 
     public void SetPlayerColour(int index, Material colour)

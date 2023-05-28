@@ -21,7 +21,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         textTag = GetComponent<TextMeshProUGUI>();
 
-        var moving = GetComponent<PlayerMovement>();
+        movement = GetComponent<PlayerMovement>();
         controls = new ThirdPersonActionAsset();
 
 
@@ -30,7 +30,7 @@ public class PlayerInputHandler : MonoBehaviour
     public  void IniPlayer(PlayerConfiguration pc)
     {
         playerConfig = pc;
-        textTag.material = pc.PlayerMat;
+        //textTag.material = pc.PlayerMat;
         textTag.text = pc.ToString();
         playerConfig.Input.onActionTriggered += Input_onActionTriggered;
     }

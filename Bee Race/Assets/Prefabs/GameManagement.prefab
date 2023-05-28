@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9104774135679840473
+--- !u!1 &4948460457337390634
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9104774135679840475}
-  - component: {fileID: 9104774135679840474}
-  - component: {fileID: 9104774135679840452}
-  - component: {fileID: 9104774135679840453}
+  - component: {fileID: 4948460457337390632}
+  - component: {fileID: 4948460457337390633}
+  - component: {fileID: 4948460457337390647}
+  - component: {fileID: 4948460457337390646}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9104774135679840475
+--- !u!4 &4948460457337390632
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9104774135679840473}
+  m_GameObject: {fileID: 4948460457337390634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.58356357, y: 1.0116088, z: -0.14058328}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +34,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9104774135679840474
+--- !u!114 &4948460457337390633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9104774135679840473}
+  m_GameObject: {fileID: 4948460457337390634}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_PlayerJoinedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9104774135679840452}
+      - m_Target: {fileID: 4948460457337390647}
         m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
         m_MethodName: HandlePlayerJoin
         m_Mode: 0
@@ -92,35 +92,33 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &9104774135679840452
+--- !u!114 &4948460457337390647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9104774135679840473}
+  m_GameObject: {fileID: 4948460457337390634}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 195c6593339094f43b3f5908407dd66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxPlayers: 2
-  startCam: {fileID: 0}
   players: []
-  startingPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  snd: {fileID: 9104774135679840453}
+  snd: {fileID: 4948460457337390646}
   themes:
   - {fileID: 8300000, guid: 3e29232203de30c42827d232b6e6d7c6, type: 3}
   - {fileID: 8300000, guid: 6c40a9855d4946947af8e5bb993eba7f, type: 3}
---- !u!82 &9104774135679840453
+  levelPrefab: {fileID: 7398103082043780235, guid: 3657e184457177b41aeba0ab31ed63cf,
+    type: 3}
+--- !u!82 &4948460457337390646
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9104774135679840473}
+  m_GameObject: {fileID: 4948460457337390634}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
