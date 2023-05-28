@@ -5,53 +5,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField]
-    private InputAction move;
-    [SerializeField]
-    private InputActionAsset inputAsset;
-    [SerializeField]
-    private InputActionMap player;
+    [SerializeField] private float MoveSpeed = 3f;
 
-    [SerializeField]
-    private Rigidbody rb;
-    [SerializeField]
-    private float movementForce = 1f;
-    [SerializeField]
-    private float jumpForce = 5f;
-    [SerializeField]
-    private float maxSpeed = 5f;
-    private Vector3 forceDirection = Vector3.zero;
+    private CharacterController characterController;
 
-    [SerializeField]
-    private Camera playerCamera;
-    //private Animator animator;
+    private Vector3 moveDirection = Vector3.zero;
+    private Vector2 inputVector = Vector2.zero;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
-        inputAsset = this.GetComponent<PlayerInput>().actions;
-        player = inputAsset.FindActionMap("Player");
+        characterController = GetComponent<CharacterController>();
     }
 
-    private void OnEnable()
+    public void SetInputVector(Vector2 direction)
     {
-        //player.FindAction("Pollen").started += DropPollen;
-       // player.FindAction("Boost").started += DoBoost;
-        move = player.FindAction("Move");
-        player.Enable();
-    }
-
-    private void OnDisable()
-    {
-       // player.FindAction("Pollen").started -= DropPollen;
-       // player.FindAction("Boost").started -= DoBoost;
-        player.Disable();
+        inputVector = direction;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + forceDirection * Time.fixedDeltaTime);
+        moveDirection = new Vector3(inputVector.x, 0, inputVector.y);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection *= MoveSpeed;
+
+        characterController.Move(moveDirection * Time.fixedDeltaTime);
     }
 
 }
