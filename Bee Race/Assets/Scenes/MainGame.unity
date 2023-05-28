@@ -711,8 +711,9 @@ MonoBehaviour:
   startCam: {fileID: 1358461843}
   players: []
   startingPoints:
-  - {fileID: 560482760}
   - {fileID: 2027730174}
+  - {fileID: 560482760}
+  playerTag: {fileID: 0}
 --- !u!1 &2008704457
 GameObject:
   m_ObjectHideFlags: 0

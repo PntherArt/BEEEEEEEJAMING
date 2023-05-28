@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
     public GameObject startCam;
    [SerializeField] private List<PlayerInput> players = new List<PlayerInput> ();
     [SerializeField] private List<Transform> startingPoints;
-    //[SerializeField] private List<LayerMask> playerLayers;
+
+    public TextMeshProUGUI playerTag;
 
     private PlayerInputManager playerInputManager;
 
@@ -38,8 +40,7 @@ public class PlayerManager : MonoBehaviour
     public void AddPlayer(PlayerInput player)
     {
         players.Add(player);
-
-        Transform playerParent = player.transform.parent;
-        playerParent.position = startingPoints[players.Count - 1].position;
+        player.transform.position = startingPoints[players.Count - 1].position;
+        playerTag.text = player.name;
     }
 }
