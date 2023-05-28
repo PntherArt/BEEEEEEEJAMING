@@ -10,13 +10,17 @@ public class PlayerManager : MonoBehaviour
    [SerializeField] private List<PlayerInput> players = new List<PlayerInput> ();
     [SerializeField] private List<Transform> startingPoints;
 
-    public TextMeshProUGUI playerTag;
+    public AudioSource snd;
+    public AudioClip[] themes;
+
+    //public TextMeshProUGUI playerTag;
 
     private PlayerInputManager playerInputManager;
 
     private void Awake()
     {
         playerInputManager = FindObjectOfType<PlayerInputManager> ();
+        RandomTheme();
     }
 
     private void OnEnable()
@@ -30,17 +34,17 @@ public class PlayerManager : MonoBehaviour
         playerInputManager.onPlayerJoined -= AddPlayer;
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void AddPlayer(PlayerInput player)
     {
         players.Add(player);
         player.transform.position = startingPoints[players.Count - 1].position;
-        playerTag.text = player.name;
+        //playerTag.text = player.name;
     }
+
+    public void RandomTheme()
+    {
+        snd.clip = themes[Random.Range(0, themes.Length)];
+        snd.Play();
+    }
+
 }
