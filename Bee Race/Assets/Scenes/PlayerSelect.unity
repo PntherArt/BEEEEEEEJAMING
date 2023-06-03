@@ -461,6 +461,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManagement
       objectReference: {fileID: 0}
+    - target: {fileID: 4948460457337390634, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: MaxPlayers
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 091dfdff7d1825a44b1eb8f2734e1186, type: 3}
 --- !u!1 &2002907280

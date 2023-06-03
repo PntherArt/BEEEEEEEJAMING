@@ -13,13 +13,13 @@ public class PlayerInputHandler : MonoBehaviour
     private PlayerMovement movement;
 
     [SerializeField]
-    private TextMeshProUGUI textTag;
+    public TextMeshProUGUI textTag;
 
     private ThirdPersonActionAsset controls;
 
     private void Awake()
     {
-        textTag = GetComponent<TextMeshProUGUI>();
+        textTag.GetComponent<TextMeshProUGUI>();
 
         movement = GetComponent<PlayerMovement>();
         controls = new ThirdPersonActionAsset();
@@ -30,8 +30,9 @@ public class PlayerInputHandler : MonoBehaviour
     public  void IniPlayer(PlayerConfiguration pc)
     {
         playerConfig = pc;
-        //textTag.material = pc.PlayerMat;
-        textTag.text = pc.ToString();
+        var pi = pc.PlayerIndex;
+        textTag.faceColor = pc.PlayerMat.color;
+        textTag.SetText("Player " + (pi + 1).ToString());
         playerConfig.Input.onActionTriggered += Input_onActionTriggered;
     }
 

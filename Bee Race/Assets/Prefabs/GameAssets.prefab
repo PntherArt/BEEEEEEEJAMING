@@ -1293,7 +1293,7 @@ MonoBehaviour:
   playerSpawns:
   - {fileID: 8253763949303563640}
   - {fileID: 8253763949612535803}
-  playerPrefab: {fileID: 3523769489909971853, guid: 865f8bbef9569c7428c44138ef813111,
+  playerPrefab: {fileID: 1949045409988023663, guid: 87a7c1d25a785ea47bc773789a0587a6,
     type: 3}
 --- !u!81 &8253763949031993059
 AudioListener:

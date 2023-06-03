@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelSpawnner : MonoBehaviour
@@ -19,7 +20,7 @@ public class LevelSpawnner : MonoBehaviour
         for(int i = 0; i < playerConfigs.Length; i++)
         {
             var player = Instantiate(playerPrefab, playerSpawns[i].position, playerSpawns[i].rotation, gameObject.transform);
-            player.GetComponent<PlayerInputHandler>().IniPlayer(playerConfigs[i]);
+            player.GetComponentInChildren<PlayerInputHandler>().IniPlayer(playerConfigs[i]);
         }
     }
 
