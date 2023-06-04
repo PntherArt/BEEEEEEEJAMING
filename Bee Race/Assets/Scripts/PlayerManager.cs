@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
 {
     private List<PlayerConfiguration> PlayerConfigs;
 
-    [SerializeField] private int MaxPlayers = 2;
+    [SerializeField] private int MaxPlayers = 3;
 
 
     [SerializeField] private List<PlayerInput> players = new List<PlayerInput> ();
@@ -22,9 +22,11 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance { get; private set; }
     public GameObject levelPrefab;
 
+    public SpawnPlayerSetupMenu spsm;
+
     private void Awake()
     {
-
+        spsm.GetComponent<SpawnPlayerSetupMenu>();
 
         if(Instance != null)
         {
@@ -62,6 +64,7 @@ public class PlayerManager : MonoBehaviour
 
         if(PlayerConfigs.Count == MaxPlayers && PlayerConfigs.All(p => p.IsReady == true))
         {
+            spsm.DestroyCam();
             SceneManager.LoadScene("MainGame");
             StartCoroutine(Intro());
         }

@@ -29,12 +29,12 @@ public partial class @ThirdPersonActionAsset : IInputActionCollection2, IDisposa
             ""actions"": [
                 {
                     ""name"": ""Select"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""3d4605d3-6985-454c-83ef-d4f0ed4d6df3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""initialStateCheck"": false
                 },
                 {
                     ""name"": ""Move"",
