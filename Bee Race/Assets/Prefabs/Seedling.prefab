@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 4021658311493887935}
   - component: {fileID: 7003062484188462533}
   - component: {fileID: 7901967955264402493}
+  - component: {fileID: -6048547903155492812}
   m_Layer: 0
   m_Name: Seedling
   m_TagString: Untagged
@@ -177,7 +178,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4360641407420431621}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.4700012, y: -1.6155517, z: -1.0800002}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
@@ -220,6 +221,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16599207, y: 0.36677206, z: 0.2679969}
   m_Center: {x: 0.010296365, y: 0.13127905, z: 0.051002048}
+--- !u!114 &-6048547903155492812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4360641407420431621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd15e4c77f77764ea74360429c87af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowerPrefabs:
+  - {fileID: 5433852621526708077, guid: cc20e902fbb3bb84fb5cdd40648c108b, type: 3}
+  - {fileID: 293050186166439290, guid: 7d1fa4918284e6940950aba33c50c3f1, type: 3}
+  - {fileID: 3681573457633168338, guid: 71a53b75ca6191746b23b2f2765d849e, type: 3}
+  fC: {fileID: 4464161945529236080, guid: abc7dbb1df2822d498ff3b510ac4f568, type: 3}
 --- !u!1 &7780773386538987125
 GameObject:
   m_ObjectHideFlags: 0

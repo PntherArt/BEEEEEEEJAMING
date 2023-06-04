@@ -8,17 +8,14 @@ public class FlowerCount : MonoBehaviour
     public int flowerCount;
     public TextMeshProUGUI CountText;
 
-    /*private void Update()
+    private void Update()
     {
-        if(flower == hit)
-        {
-            flowerCount++;
-        }
+        updateFlowerCount();
     }
 
     public void updateFlowerCount()
     {
         CountText.text = flowerCount.ToString("0");
-    }*/
+    }
 
 }
