@@ -10,24 +10,22 @@ public class PollenTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        fC.GetComponent<FlowerCount>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnParticleCollision(GameObject other)
     {
-        if(other.gameObject.CompareTag("Pollen"))
-        {
-            for(int i = 0; i < flowerPrefabs.Length; i++)
+
+            for (int i = 0; i < 1; i++)
             {
                 var seed = this.gameObject.transform;
-                Instantiate(flowerPrefabs[Random.Range(0,flowerPrefabs.Length)], seed.position, seed.rotation);
-                GameObject.Destroy(seed);
+                Instantiate(flowerPrefabs[Random.Range(0, flowerPrefabs.Length)], seed.position, seed.rotation);
                 fC.flowerCount++;
+                fC.updateFlowerCount();
+                Destroy(gameObject);
+                
             }
 
-        } else
-        {
-            return;
-        }
     }
+
 }

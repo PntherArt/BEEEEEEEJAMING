@@ -244,75 +244,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &920344761
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1949045409988023663, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerConfigObj
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.722351
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.18742037
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5725552708696257010, guid: 87a7c1d25a785ea47bc773789a0587a6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87a7c1d25a785ea47bc773789a0587a6, type: 3}
 --- !u!224 &1656016672 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4464161945529236081, guid: abc7dbb1df2822d498ff3b510ac4f568,
@@ -418,7 +349,7 @@ MonoBehaviour:
   playerSpawns:
   - {fileID: 1450182284526904021}
   - {fileID: 1450182284353529942}
-  playerPrefab: {fileID: 1949045409988023663, guid: 87a7c1d25a785ea47bc773789a0587a6,
+  playerPrefab: {fileID: 3523769489909971853, guid: 865f8bbef9569c7428c44138ef813111,
     type: 3}
 --- !u!1 &1450182283760388428
 GameObject:
@@ -740,6 +671,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 839994151}
     m_Modifications:
+    - target: {fileID: 4464161945007397748, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161945007397748, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161945007397748, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161945007397748, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 4464161945529236045, guid: abc7dbb1df2822d498ff3b510ac4f568,
         type: 3}
       propertyPath: m_Name
@@ -849,6 +800,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946345290922, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946345290922, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946345290922, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946345290922, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946945778037, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946945778037, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946945778037, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464161946945778037, guid: abc7dbb1df2822d498ff3b510ac4f568,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc7dbb1df2822d498ff3b510ac4f568, type: 3}

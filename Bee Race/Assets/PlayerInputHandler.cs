@@ -17,6 +17,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     private ThirdPersonActionAsset controls;
 
+    public ParticleSystem ps;
+
     private void Awake()
     {
         textTag.GetComponent<TextMeshProUGUI>();
@@ -62,10 +64,10 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPollen(CallbackContext context)
     {
-        /*if(movement != null)
+        if(movement != null)
         {
-            movement.SetInputVector(context.ReadValue<Vector2>());
-        }*/
+            ps.Play();
+        }
     }
 
     public void OnBoost(CallbackContext context)

@@ -40,9 +40,9 @@ public class PlayerManager : MonoBehaviour
     }
 
 
-    public void RandomTheme()
+    public void Theme()
     {
-        snd.clip = themes[Random.Range(0, themes.Length)];
+        snd.clip = themes[1];
         snd.Play();
     }
 
@@ -63,7 +63,7 @@ public class PlayerManager : MonoBehaviour
         if(PlayerConfigs.Count == MaxPlayers && PlayerConfigs.All(p => p.IsReady == true))
         {
             SceneManager.LoadScene("MainGame");
-            RandomTheme();
+            StartCoroutine(Intro());
         }
     }
 
@@ -75,6 +75,14 @@ public class PlayerManager : MonoBehaviour
             pi.transform.SetParent(transform);
             PlayerConfigs.Add(new PlayerConfiguration(pi));
         }
+    }
+
+    IEnumerator Intro()
+    {
+        snd.clip = themes[0];
+        snd.Play();
+        yield return new WaitForSeconds(9);
+        Theme();
     }
 
 }
@@ -93,3 +101,4 @@ public class PlayerConfiguration
         Input = pi;
     }
 }
+

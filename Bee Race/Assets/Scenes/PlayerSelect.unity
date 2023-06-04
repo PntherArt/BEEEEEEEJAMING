@@ -466,11 +466,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4948460457337390646, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
         type: 3}
       propertyPath: MaxPlayers
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: themes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: themes.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a480f2a632d7e014c922c9d4fe31e767, type: 3}
+    - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: themes.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 29bb6ad226c1d364d8311c4e211e157e, type: 3}
+    - target: {fileID: 4948460457337390647, guid: 091dfdff7d1825a44b1eb8f2734e1186,
+        type: 3}
+      propertyPath: themes.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 29bb6ad226c1d364d8311c4e211e157e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 091dfdff7d1825a44b1eb8f2734e1186, type: 3}
 --- !u!1 &2002907280

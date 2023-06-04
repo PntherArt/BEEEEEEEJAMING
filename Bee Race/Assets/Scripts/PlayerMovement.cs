@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 moveDirection = Vector3.zero;
     private Vector2 inputVector = Vector2.zero;
-
+    
 
     private void Awake()
     {
